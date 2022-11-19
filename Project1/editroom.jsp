@@ -1,25 +1,14 @@
-<html>
 
-<head>
-<title>Edit service</title>
 
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-	
-</head>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags"%>
+<c:set var="pageTitle" value="Edit room" scope="application" />
 
-<body>
-	<nav class="#4a148c purple darken-4" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">Logo</a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="hotelroom.html"> Rooms</a></li>
-			</ul>
-		</div>
-	</nav>
+
+
+<t:wrapper>
 
 
 	<div class="section no-pad-bot" id="index-banner">
@@ -37,7 +26,7 @@
     <p>
       <label>
         <input type="checkbox" />
-        <span>Забронирован</span>
+        <span>Занято</span>
       </label>
     </p>
     </form>
@@ -53,7 +42,7 @@
 			</div>
 			<div class="row">
 				<div class="col s12 input-field center-align">
-					<a class="btn waves-effect #c51162 pink accent-4" href="hotelroom.html"><i
+					<a class="btn waves-effect #c51162 pink accent-4" href="hotelroom.jsp"><i
 						class="material-icons left">list</i>к списку</a> <a
 						class="btn waves-effect #009688 teal" href="#"><i
 						class="material-icons left">save</i>Сохранить</a>
@@ -65,5 +54,5 @@
 	<!-- Compiled and minified JavaScript -->
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-</html>
+</t:wrapper>
+
